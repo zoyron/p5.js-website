@@ -1,9 +1,7 @@
 /*
  * @name Drop
- * @description You will need to include the
- * <a href="http://p5js.org/reference/#/libraries/p5.dom">p5.dom library</a>
- * for this example to work in your own project.<br><br>
- * Drag an image file onto the canvas to see it displayed.
+ * @arialabel Empty grey canvas that displays an image if it is dragged from the user’s computer to the grey canvas
+ * @description Drag an image file onto the canvas to see it displayed.
  */
 
 function setup() {

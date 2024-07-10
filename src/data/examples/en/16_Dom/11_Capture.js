@@ -1,10 +1,8 @@
 /*
  * @name Video Capture
+ * @arialabel Takes feed from the user’s computer camera and displays it in the window
  * @frame 710,240
- * @description <p><em><span class="small"> To run this example locally, you will need the
- * <a href="http://p5js.org/reference/#/libraries/p5.dom">p5.dom library</a>
- * at least one video file, and a running <a href="https://github.com/processing/p5.js/wiki/Local-server">local server</a>.</span></em></p><br><br>
- * Capture video from the webcam and display
+ * @description Capture video from the webcam and display
  * on the canvas as well with invert filter. Note that by
  * default the capture feed shows up, too. You can hide the
  * feed by uncommenting the capture.hide() line.

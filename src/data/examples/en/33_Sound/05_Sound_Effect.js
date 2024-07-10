@@ -1,5 +1,6 @@
 /*
  * @name Sound Effect
+ * @arialabel Grey circle on a white screen that plays a doorbell sound when pressed on
  * @description <p>Play a sound effect when the mouse is clicked inside the circle.</p>
  * <p><em><span class="small"> To run this example locally, you will need the
  * <a href="http://p5js.org/reference/#/libraries/p5.sound">p5.sound library</a>
@@ -32,6 +33,7 @@ class Doorbell {
     }
     stroke(0);
     strokeWeight(4);
+    ellipseMode(RADIUS);
     ellipse(this.x, this.y, this.r, this.r);
   }
 }
@@ -51,7 +53,7 @@ function setup() {
   dingdong = loadSound('assets/doorbell.mp3');
 
   // Create a new doorbell
-  doorbell = new Doorbell(width / 2, height / 2, 64);
+  doorbell = new Doorbell(width / 2, height / 2, 32);
 }
 
 function draw() {

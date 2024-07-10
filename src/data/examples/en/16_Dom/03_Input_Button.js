@@ -1,9 +1,7 @@
 /*
  * @name Input and Button
- * @description You will need to include the
- * <a href="http://p5js.org/reference/#/libraries/p5.dom">p5.dom library</a>
- * for this example to work in your own project.<br><br>
- * Input text and click the button to see it affect the the canvas.
+ * @arialabel “What is your name?” is written in the top left of the window with a text input box and a submit button under. After inputting text and submitting, the text submitted is generated multiple times to cover the background in a random formation in various shades of cyan.
+ * @description Input text and click the button to see it affect the the canvas.
  */
 let input, button, greeting;
 

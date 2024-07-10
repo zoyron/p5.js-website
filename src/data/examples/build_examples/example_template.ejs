@@ -34,7 +34,7 @@ slug: examples/
         <div id="exampleEditor"></div>
 
 
-        <iframe id="exampleFrame" src="{{assets}}/examples/example.html" ></iframe>
+        <iframe id="exampleFrame" src="{{assets}}/examples/example.html" aria-label="example arialabel placeholder" ></iframe>
       </div>
 
       <p><a style="border-bottom:none !important;" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target=_blank><img src="https://licensebuttons.net/l/by-nc-sa/4.0/88x31.png" alt="creative commons license" style="width:88px"/></a></p>
@@ -54,7 +54,8 @@ slug: examples/
     window.addEventListener('load', function() {
       // examples.init('{{assets}}/examples/{{language}}/<%=file%>');
       if (<%=mobileEx%>) {
-        var isMobile = window.matchMedia("only screen and (max-width: 480px)");
+        var isMobile = window.matchMedia("only screen and (max-width: 767px)");
+        // isMobile is true if viewport is less than 768 pixels wide
         document.getElementById('exampleFrame').style.display = 'none';
         if (isMobile.matches) {
           document.getElementById('notMobile-message').style.display = 'none';
